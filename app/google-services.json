@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "778044604472",
+    "project_id": "guru2androidrecycleapp-f4dbb",
+    "storage_bucket": "guru2androidrecycleapp-f4dbb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778044604472:android:ad30ce7d9e935ef95b66cd",
+        "android_client_info": {
+          "package_name": "com.example.guru2androidrecycleapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "778044604472-n3ak3ja9djca3gmj8brj7nlmtaa4t6j1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBh7Q5Z4z3tvomsZhviInPSFw51ZN3RZzk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "778044604472-n3ak3ja9djca3gmj8brj7nlmtaa4t6j1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
