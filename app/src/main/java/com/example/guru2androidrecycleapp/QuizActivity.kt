@@ -3,13 +3,9 @@ package com.example.guru2androidrecycleapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.ImageButton
-import android.widget.TextView
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.*
 
-class MyPage : AppCompatActivity() {
+class QuizActivity : AppCompatActivity() {
 
     lateinit var mypage4: ImageButton
     lateinit var home4: ImageButton
@@ -18,7 +14,7 @@ class MyPage : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_my_page)
+        setContentView(R.layout.activity_quiz)
 
         mypage4 = findViewById<ImageButton>(R.id.mypage4)
         home4 = findViewById<ImageButton>(R.id.home4)

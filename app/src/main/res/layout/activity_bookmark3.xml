@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Bookmark3">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="267dp"
+        app:srcCompat="@drawable/pet" />
+
+    <CheckBox
+        android:id="@+id/check_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="용기 안에 담겨있는 내용물은 깨끗이 비우고 배출하셨나요?" />
+
+    <CheckBox
+        android:id="@+id/check_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="재활용품에 묻어있는 이물질, 음식물 등을 닦거나 헹궈서 배출하셨나요?" />
+
+    <CheckBox
+        android:id="@+id/check_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="라벨 등의 다른 재질 부분은 제거하여 배출하셨나요?" />
+
+    <CheckBox
+        android:id="@+id/check_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="종류별, 재질별로 구분하여 분리수거함에 배출하셨나요?" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    //인증 확인 버튼
+
+    <Button
+        android:id="@+id/authentication_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="확인" />
+
+
+</LinearLayout>

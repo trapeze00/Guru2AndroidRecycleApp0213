@@ -65,7 +65,7 @@ class PageSignUp : AppCompatActivity() {
                 finish()
             }else{
                 Toast.makeText(baseContext,"Sign up failed",
-                Toast.LENGTH_SHORT).show()
+                    Toast.LENGTH_SHORT).show()
             }
         }
     }
