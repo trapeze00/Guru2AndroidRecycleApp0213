@@ -98,7 +98,8 @@
             android:layout_gravity="bottom"
             android:layout_weight="1"
             android:background="@drawable/shadow"
-            app:srcCompat="@drawable/user_fill" />
+            app:srcCompat="@drawable/user_fill"
+            android:enabled="false"/>
     </LinearLayout>
 
 

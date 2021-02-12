@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pageQuizGlass"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="50dp"
+        android:text="5 point"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:background="@drawable/point_box"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/rectangle_shape"
+        android:paddingLeft="9dp"
+        android:paddingTop="12dp"
+        android:paddingRight="9dp"
+        android:paddingBottom="12dp"
+        android:text="Q.색상이 있는 유리병은 유리류와 구분하여 따로 배출해야 한다."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Quiz1GlassO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:text="O"
+            android:backgroundTint="#348F6C"/>
+
+        <Button
+            android:id="@+id/Quiz1GlassX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="80dp"
+            android:text="x"
+            android:backgroundTint="#348F6C"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Quiz1GlassAns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="16dp"
+        android:text="정답은 (X) 색 구분 없이 같은 유리류로 배출합니다."
+        android:textAlignment="center"
+        android:textColor="#FF5C5C"
+        android:textSize="14sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="50dp"
+        android:text="5 point"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:background="@drawable/point_box"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/rectangle_shape"
+        android:paddingLeft="9dp"
+        android:paddingTop="12dp"
+        android:paddingRight="9dp"
+        android:paddingBottom="12dp"
+        android:text="Q.냄비 뚜껑이나 전자레인지용 용기 같은 내열유리    또한 유리류로 분리배출이 가능하다."
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Quiz2GlassO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:text="O"
+            android:backgroundTint="#348F6C"/>
+
+        <Button
+            android:id="@+id/Quiz2GlassX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="80dp"
+            android:text="x"
+            android:backgroundTint="#348F6C"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Quiz2GlassAns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="16dp"
+        android:visibility="invisible"
+        android:text="정답은 (X) 내열유리는 특수규격마대로 배출합니다."
+        android:textAlignment="center"
+        android:textColor="#FF5C5C"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_weight="8">
+
+        <ImageButton
+            android:id="@+id/QuizGlasshome"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/shadow"
+            app:srcCompat="@drawable/house_fill"
+            android:layout_gravity="bottom"/>
+
+        <ImageButton
+            android:id="@+id/QuizGlassbookmark"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/shadow"
+            app:srcCompat="@drawable/bookmark_fill"
+            android:layout_gravity="bottom"/>
+
+        <ImageButton
+            android:id="@+id/QuizGlassquiz"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/shadow"
+            app:srcCompat="@drawable/quiz_fill"
+            android:layout_gravity="bottom"/>
+
+        <ImageButton
+            android:id="@+id/QuizGlassmypage"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/shadow"
+            app:srcCompat="@drawable/user_fill"
+            android:layout_gravity="bottom"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pageQuizStyrofoam"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="50dp"
+        android:text="5 point"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:background="@drawable/point_box"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/rectangle_shape"
+        android:paddingLeft="9dp"
+        android:paddingTop="12dp"
+        android:paddingRight="9dp"
+        android:paddingBottom="12dp"
+        android:text="Q.스티로폼은 플라스틱의 일종이니 플라스틱 용기류로 분리배출이 가능하다."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Quiz1StyrofoamO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:text="O"
+            android:backgroundTint="#348F6C"/>
+
+        <Button
+            android:id="@+id/Quiz1StyrofoamX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="80dp"
+            android:text="x"
+            android:backgroundTint="#348F6C"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Quiz1StyrofoamAns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="16dp"
+        android:text="정답은 (X) 플라스틱 용기류와 구분하여 배출합니다.."
+        android:textAlignment="center"
+        android:textColor="#FF5C5C"
+        android:textSize="14sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="50dp"
+        android:text="5 point"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:background="@drawable/point_box"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/rectangle_shape"
+        android:paddingLeft="9dp"
+        android:paddingTop="12dp"
+        android:paddingRight="9dp"
+        android:paddingBottom="12dp"
+        android:text="Q. 스티로폼류 컵라면 용기를 물로 씻은 뒤에 기름기 등이 남아있다면 재활용이 불가능하다."
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Quiz2StyrofoamO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:text="O"
+            android:backgroundTint="#348F6C"/>
+
+        <Button
+            android:id="@+id/Quiz2StyrofoamX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="80dp"
+            android:text="x"
+            android:backgroundTint="#348F6C"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Quiz2StyrofoamAns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="16dp"
+        android:visibility="invisible"
+        android:text="정답은 (X) 물로 깨끗이 씻은 뒤 일부 기름기가 남아있어도 재활용이 가능합니다."
+        android:textAlignment="center"
+        android:textColor="#FF5C5C"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_weight="8">
+
+        <ImageButton
+            android:id="@+id/QuizStyrofoamhome"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/shadow"
+            app:srcCompat="@drawable/house_fill"
+            android:layout_gravity="bottom"/>
+
+        <ImageButton
+            android:id="@+id/QuizStyrofoambookmark"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/shadow"
+            app:srcCompat="@drawable/bookmark_fill"
+            android:layout_gravity="bottom"/>
+
+        <ImageButton
+            android:id="@+id/QuizStyrofoamquiz"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/shadow"
+            app:srcCompat="@drawable/quiz_fill"
+            android:layout_gravity="bottom"/>
+
+        <ImageButton
+            android:id="@+id/QuizStyrofoammypage"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/shadow"
+            app:srcCompat="@drawable/user_fill"
+            android:layout_gravity="bottom"/>
+    </LinearLayout>
+
+</LinearLayout>

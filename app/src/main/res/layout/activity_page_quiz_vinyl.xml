@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pageQuizVinyl"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="50dp"
+        android:text="5 point"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:background="@drawable/point_box"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/rectangle_shape"
+        android:paddingLeft="9dp"
+        android:paddingTop="12dp"
+        android:paddingRight="9dp"
+        android:paddingBottom="12dp"
+        android:text="Q.아이스팩과 보온보냉팩은 비닐류로 분리배출이 가능하다"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Quiz1VinylO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:text="O"
+            android:backgroundTint="#348F6C"/>
+
+        <Button
+            android:id="@+id/Quiz1VinylX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="80dp"
+            android:text="x"
+            android:backgroundTint="#348F6C"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Quiz1VinylAns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="16dp"
+        android:text="정답은 (X) 재활용이 어려워 종량제 봉투로 배출해야 한다."
+        android:textAlignment="center"
+        android:textColor="#FF5C5C"
+        android:textSize="14sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="50dp"
+        android:text="5 point"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:background="@drawable/point_box"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/rectangle_shape"
+        android:paddingLeft="9dp"
+        android:paddingTop="12dp"
+        android:paddingRight="9dp"
+        android:paddingBottom="12dp"
+        android:text="Q. 뾱뾱이라고 불리는 에어캡은 비닐류로 분리배출이 가능하다"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Quiz2VinylO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:text="O"
+            android:backgroundTint="#348F6C"/>
+
+        <Button
+            android:id="@+id/Quiz2VinylX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="80dp"
+            android:text="x"
+            android:backgroundTint="#348F6C"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Quiz2VinylAns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="16dp"
+        android:visibility="invisible"
+        android:text="정답은 (O) 에어캡은 비닐류로 배출 가능합니다."
+        android:textAlignment="center"
+        android:textColor="#FF5C5C"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_weight="8">
+
+        <ImageButton
+            android:id="@+id/QuizVinylhome"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/shadow"
+            app:srcCompat="@drawable/house_fill"
+            android:layout_gravity="bottom"/>
+
+        <ImageButton
+            android:id="@+id/QuizVinylbookmark"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/shadow"
+            app:srcCompat="@drawable/bookmark_fill"
+            android:layout_gravity="bottom"/>
+
+        <ImageButton
+            android:id="@+id/QuizVinylquiz"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/shadow"
+            app:srcCompat="@drawable/quiz_fill"
+            android:layout_gravity="bottom"/>
+
+        <ImageButton
+            android:id="@+id/QuizVinylmypage"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/shadow"
+            app:srcCompat="@drawable/user_fill"
+            android:layout_gravity="bottom"/>
+    </LinearLayout>
+
+</LinearLayout>

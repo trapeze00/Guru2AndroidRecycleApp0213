@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnQuizPaper"
+        android:text="종이"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:paddingLeft="12dp"
+        android:drawablePadding="40dp"
+        android:gravity="left|center_vertical"
+        android:drawableLeft="@drawable/quiz_paper"
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:id="@+id/btnQuizPlastic"
+        android:text="플라스틱"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:paddingLeft="12dp"
+        android:drawablePadding="40dp"
+        android:gravity="left|center_vertical"
+        android:drawableLeft="@drawable/quiz_plastic"
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnQuizGlass"
+        android:text="유리"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:paddingLeft="12dp"
+        android:drawablePadding="40dp"
+        android:gravity="left|center_vertical"
+        android:drawableLeft="@drawable/quiz_glass"
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnQuizCan"
+        android:text="금속"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:paddingLeft="12dp"
+        android:drawablePadding="40dp"
+        android:gravity="left|center_vertical"
+        android:drawableLeft="@drawable/quiz_can"
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnQuizVinyl"
+        android:text="비닐"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:paddingLeft="12dp"
+        android:drawablePadding="40dp"
+        android:gravity="left|center_vertical"
+        android:drawableLeft="@drawable/quiz_vinyl"
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp" />
+    <Button
+        android:id="@+id/btnQuizStyrofoam"
+        android:text="스티로폼"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:paddingLeft="12dp"
+        android:drawablePadding="40dp"
+        android:gravity="left|center_vertical"
+        android:drawableLeft="@drawable/quiz_styrofoam"
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

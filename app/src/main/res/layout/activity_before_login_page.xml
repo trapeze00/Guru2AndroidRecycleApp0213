@@ -43,7 +43,7 @@
         android:layout_marginTop="33dp">
 
         <ImageButton
-            android:id="@+id/home3"
+            android:id="@+id/home04"
             android:layout_width="wrap_content"
             android:layout_height="70dp"
             android:layout_weight="1"
@@ -51,7 +51,7 @@
             app:srcCompat="@drawable/house_fill" />
 
         <ImageButton
-            android:id="@+id/bookmark3"
+            android:id="@+id/bookmark04"
             android:layout_width="wrap_content"
             android:layout_height="70dp"
             android:layout_weight="1"
@@ -59,7 +59,7 @@
             app:srcCompat="@drawable/bookmark_fill" />
 
         <ImageButton
-            android:id="@+id/quiz3"
+            android:id="@+id/quiz04"
             android:layout_width="wrap_content"
             android:layout_height="70dp"
             android:layout_weight="1"
@@ -67,7 +67,7 @@
             app:srcCompat="@drawable/quiz_fill" />
 
         <ImageButton
-            android:id="@+id/mypage3"
+            android:id="@+id/mypage04"
             android:layout_width="wrap_content"
             android:layout_height="70dp"
             android:layout_weight="1"
