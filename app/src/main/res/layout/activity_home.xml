@@ -2,22 +2,52 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".HomeActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:text="알아야할 환경 이슈" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/ftext_issue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="30dp"
+                android:text="알아야할 환경"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ltext_issue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:text="Issues"
+                android:textColor="#348F6C"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/issueview"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="#348F6C" />
+
+
+        </LinearLayout>
+
 
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/viewPager"
@@ -25,10 +55,39 @@
             android:layout_height="200dp"
             android:layout_marginTop="30dp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="분리수거 Tip" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_ftip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:singleLine="true"
+                android:text="분리수거"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_ltip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:singleLine="true"
+                android:text="Tip"
+                android:textColor="#348F6C"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/tipview"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="#348F6C" />
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -39,8 +98,8 @@
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginStart="15dp"
+                android:background="#00ffffff"
                 android:scaleType="centerInside"
-                android:background="@android:color/transparent"
                 app:srcCompat="@drawable/main_paper" />
 
             <ImageButton
@@ -49,8 +108,8 @@
                 android:layout_height="120dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
+                android:background="#00ffffff"
                 android:scaleType="centerInside"
-                android:background="@android:color/transparent"
                 app:srcCompat="@drawable/main_plastic" />
 
             <ImageButton
@@ -59,8 +118,8 @@
                 android:layout_height="120dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginEnd="15dp"
+                android:background="#00ffffff"
                 android:scaleType="centerInside"
-                android:background="@android:color/transparent"
                 app:srcCompat="@drawable/main_glass" />
 
         </LinearLayout>
@@ -74,8 +133,8 @@
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:layout_marginStart="15dp"
+                android:background="#00ffffff"
                 android:scaleType="centerInside"
-                android:background="@android:color/transparent"
                 app:srcCompat="@drawable/main_can" />
 
             <ImageButton
@@ -84,8 +143,8 @@
                 android:layout_height="120dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
+                android:background="#00ffffff"
                 android:scaleType="centerInside"
-                android:background="@android:color/transparent"
                 app:srcCompat="@drawable/main_vinyl" />
 
             <ImageButton
@@ -94,52 +153,54 @@
                 android:layout_height="120dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginEnd="15dp"
+                android:background="#00ffffff"
                 android:scaleType="centerInside"
-                android:background="@android:color/transparent"
                 app:srcCompat="@drawable/main_styrofoam" />
 
         </LinearLayout>
+
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="8">
+        android:layout_height="70dp">
 
         <ImageButton
             android:id="@+id/home3"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom"
             android:layout_weight="1"
-            android:background="@android:color/transparent"
+            android:background="@drawable/shadow"
             app:srcCompat="@drawable/house_fill" />
 
         <ImageButton
             android:id="@+id/bookmark3"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom"
             android:layout_weight="1"
-            android:background="@android:color/transparent"
+            android:background="@drawable/shadow"
             app:srcCompat="@drawable/bookmark_fill" />
 
         <ImageButton
             android:id="@+id/quiz3"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom"
             android:layout_weight="1"
-            android:background="@android:color/transparent"
+            android:background="@drawable/shadow"
             app:srcCompat="@drawable/quiz_fill" />
 
         <ImageButton
             android:id="@+id/mypage3"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom"
             android:layout_weight="1"
-            android:background="@android:color/transparent"
+            android:background="@drawable/shadow"
             app:srcCompat="@drawable/user_fill" />
-
-
     </LinearLayout>
 
 </LinearLayout>

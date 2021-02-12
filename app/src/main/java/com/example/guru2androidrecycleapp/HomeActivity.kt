@@ -21,6 +21,7 @@ class HomeActivity : AppCompatActivity() {
     lateinit var home3: ImageButton
     lateinit var quiz3: ImageButton
     lateinit var bookmark3: ImageButton
+    lateinit var quizPaper: ImageButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,7 +31,7 @@ class HomeActivity : AppCompatActivity() {
         home3 = findViewById<ImageButton>(R.id.home3)
         quiz3 = findViewById<ImageButton>(R.id.quiz3)
         bookmark3 = findViewById<ImageButton>(R.id.bookmark3)
-
+        quizPaper = findViewById<ImageButton>(R.id.quizPaper)
 
 
             //mypage 버튼 클릭 시 마이페이지 이동
@@ -56,6 +57,12 @@ class HomeActivity : AppCompatActivity() {
                 var intent = Intent(this, Bookmark1::class.java)
                 startActivity(intent)
             }
+
+            quizPaper.setOnClickListener {
+                var intent = Intent(this, HomePaper::class.java)
+                startActivity(intent)
+            }
+
 
 
 

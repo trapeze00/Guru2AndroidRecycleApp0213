@@ -14,32 +14,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Guru2AndroidRecycleApp">
-
-        <activity android:name=".QuizActivity"
-            android:label="퀴즈">
-        </activity>
-
-        <activity android:name=".Bookmark3"
-            android:label="인증"/>
-
-        <activity android:name=".Bookmark2"
-            android:label="인증"/>
-
-        <activity android:name=".Bookmark1"
-            android:label="인증"/>
-
-        <activity android:name=".HomeActivity"
-            android:label="홈"/>
-
-        <activity android:name=".MyPage"
-            android:label="마이페이지"/>
-
-        <activity android:name=".PageSignUp"
-            android:label="회원가입"/>
-
-        <activity android:name=".BeforeLoginPage"
+        <activity android:name=".HomePaper"></activity>
+        <activity android:name=".pageQuizPaper" />
+        <activity
+            android:name=".QuizActivity"
+            android:label="퀴즈" />
+        <activity
+            android:name=".Bookmark3"
+            android:label="인증" />
+        <activity
+            android:name=".Bookmark2"
+            android:label="인증" />
+        <activity
+            android:name=".Bookmark1"
+            android:label="인증" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="홈" />
+        <activity
+            android:name=".MyPage"
+            android:label="마이페이지" />
+        <activity
+            android:name=".PageSignUp"
+            android:label="회원가입" />
+        <activity
+            android:name=".BeforeLoginPage"
             android:label="로그인">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
