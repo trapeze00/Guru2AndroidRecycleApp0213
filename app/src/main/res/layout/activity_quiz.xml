@@ -61,6 +61,7 @@
         android:textSize="16sp"
         android:textColor="@color/black"
         android:paddingLeft="12dp"
+
         android:drawablePadding="40dp"
         android:gravity="left|center_vertical"
         android:drawableLeft="@drawable/quiz_can"
@@ -102,4 +103,46 @@
         android:layout_marginRight="16dp"
         android:layout_marginTop="16dp" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_weight="8">
+
+        <ImageButton
+            android:id="@+id/Quizhome"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/shadow"
+            app:srcCompat="@drawable/house_fill"
+            android:layout_gravity="bottom"/>
+
+        <ImageButton
+            android:id="@+id/Quizbookmark"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/shadow"
+            app:srcCompat="@drawable/bookmark_fill"
+            android:layout_gravity="bottom"/>
+
+        <ImageButton
+            android:id="@+id/Quizquiz"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/shadow"
+            app:srcCompat="@drawable/quiz_fill"
+            android:layout_gravity="bottom"
+            android:enabled="false"/>
+
+        <ImageButton
+            android:id="@+id/Quizmypage"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/shadow"
+            app:srcCompat="@drawable/user_fill"
+            android:layout_gravity="bottom"/>
+    </LinearLayout>
 </LinearLayout>

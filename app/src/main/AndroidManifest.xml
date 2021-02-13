@@ -4,6 +4,10 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 카메라 권한과 카메라로 촬영한 사진에 대한 접근 권한 선언 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -12,27 +16,74 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Guru2AndroidRecycleApp">
-        <activity android:name=".PageTipPlastic"></activity>
-        <activity android:name=".PageTipPaper" />
-        <activity android:name=".pageQuizStyrofoam" />
-        <activity android:name=".pageQuizVinyl" />
-        <activity android:name=".pageQuizCan" />
-        <activity android:name=".pageQuizGlass" />
-        <activity android:name=".pageQuizPlastic" />
-        <activity android:name=".pageQuizPaper" />
-        <activity android:name=".QuizActivity" />
-        <activity android:name=".BookmarkActivity" />
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".MyPage" />
-        <activity android:name=".PageSignUp" />
-        <activity android:name=".BeforeLoginPage">
+        <activity
+            android:name=".PageTipStyrofoam"
+            android:label="분리수거"/>
+        <activity
+            android:name=".PageTipVinyl"
+            android:label="분리수거"/>
+        <activity
+            android:name=".PageTipCan"
+            android:label="분리수거"/>
+        <activity
+            android:name=".PageTipGlass"
+            android:label="분리수거"/>
+        <activity
+            android:name=".BookmarkPagePosting"
+            android:label="인증"/>
+        <activity
+            android:name=".BookmarkPageAuthentication"
+            android:label="인증"/>
+        <activity
+            android:name=".PageTipPlastic"
+            android:label="분리수거"/>
+        <activity
+            android:name=".PageTipPaper"
+            android:label="분리수거"/>
+        <activity
+            android:name=".pageQuizStyrofoam"
+            android:label="스티로폼류 퀴즈"/>
+        <activity
+            android:name=".pageQuizVinyl"
+            android:label="비닐류 퀴즈"/>
+        <activity
+            android:name=".pageQuizCan"
+            android:label="캔류 퀴즈"/>
+        <activity
+            android:name=".pageQuizGlass"
+            android:label="유리류 퀴즈"/>
+        <activity
+            android:name=".pageQuizPlastic"
+            android:label="플라스틱류 퀴즈"/>
+        <activity
+            android:name=".pageQuizPaper"
+            android:label="종이류 퀴즈"/>
+        <activity
+            android:name=".QuizActivity"
+            android:label="퀴즈"/>
+        <activity
+            android:name=".BookmarkActivity"
+            android:label="인증"/>
+        <activity
+            android:name=".HomeActivity"
+            android:label="RE:"/>
+        <activity
+            android:name=".MyPage"
+            android:label="마이 페이지"/>
+        <activity
+            android:name=".PageSignUp"
+            android:label="회원가입"/>
+        <activity
+            android:name=".BeforeLoginPage"
+            android:label="마이페이지">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="로그인"/>
     </application>
-
 </manifest>

@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PageTipPaper"
+    tools:context=".PageTipVinyl"
     android:orientation="vertical">
-
 
     <ScrollView
         android:layout_width="match_parent"
@@ -15,7 +14,7 @@
             android:id="@+id/imageViewPaper"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/tip_paper"
+            app:srcCompat="@drawable/tip_vinyl"
             />
     </ScrollView>
 
@@ -24,7 +23,7 @@
         android:layout_height="70dp">
 
         <ImageButton
-            android:id="@+id/TipPaperhome"
+            android:id="@+id/TipVinylhome"
             android:layout_width="wrap_content"
             android:layout_height="70dp"
             android:layout_gravity="bottom"
@@ -34,7 +33,7 @@
             android:enabled="false"/>
 
         <ImageButton
-            android:id="@+id/TipPaperbookmark"
+            android:id="@+id/TipVinylbookmark"
             android:layout_width="wrap_content"
             android:layout_height="70dp"
             android:layout_gravity="bottom"
@@ -43,7 +42,7 @@
             app:srcCompat="@drawable/bookmark_fill" />
 
         <ImageButton
-            android:id="@+id/TipPaperquiz"
+            android:id="@+id/TipVinylquiz"
             android:layout_width="wrap_content"
             android:layout_height="70dp"
             android:layout_gravity="bottom"
@@ -52,7 +51,7 @@
             app:srcCompat="@drawable/quiz_fill" />
 
         <ImageButton
-            android:id="@+id/TipPapermypage"
+            android:id="@+id/TipVinylmypage"
             android:layout_width="wrap_content"
             android:layout_height="70dp"
             android:layout_gravity="bottom"
@@ -60,5 +59,6 @@
             android:background="@drawable/shadow"
             app:srcCompat="@drawable/user_fill" />
     </LinearLayout>
+
 
 </LinearLayout>

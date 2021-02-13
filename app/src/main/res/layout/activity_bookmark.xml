@@ -1,16 +1,201 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BookmarkActivity">
+    tools:context=".BookmarkActivity"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bookmark"
-        tools:layout_editor_absoluteX="191dp"
-        tools:layout_editor_absoluteY="299dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/rectangle_shape"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:textAlignment="center"
+            android:textColor="#348F6C"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="현재 에코빌리지 등급입니다"
+            android:gravity="center">
+        </TextView>
+
+        <Button
+            android:id="@+id/btn_authentication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rectangle_shape"
+            android:text="인증하기"
+            app:backgroundTint="#348F6C" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/check_my_icon"
+                        android:layout_marginStart="16dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="16dp"
+                        android:text="helloWorld@naver.com"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/check_photo_01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:padding="2.5dp"
+                    android:background="@drawable/rectangle_shape"
+                    app:srcCompat="@drawable/check_photo_01" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/check_my_icon"
+                        android:layout_marginStart="16dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="16dp"
+                        android:text="SWU123456@naver.com"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/check_photo_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/rectangle_shape"
+                    android:padding="2.5dp"
+                    app:srcCompat="@drawable/check_photo_02" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/check_my_icon"
+                        android:layout_marginStart="16dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="16dp"
+                        android:text="LoveGuru123@naver.com"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/check_photo_03"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/rectangle_shape"
+                    android:padding="2.5dp"
+                    app:srcCompat="@drawable/check_photo_03" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageButton
+            android:id="@+id/Bookmarkhome"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@drawable/shadow"
+            app:srcCompat="@drawable/house_fill"
+            android:enabled="false"/>
+
+        <ImageButton
+            android:id="@+id/Bookmarkbookmark"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@drawable/shadow"
+            app:srcCompat="@drawable/bookmark_fill"
+            android:enabled="false"/>
+
+        <ImageButton
+            android:id="@+id/Bookmarkquiz"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@drawable/shadow"
+            app:srcCompat="@drawable/quiz_fill" />
+
+        <ImageButton
+            android:id="@+id/Bookmarkmypage"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@drawable/shadow"
+            app:srcCompat="@drawable/user_fill" />
+    </LinearLayout>
+
+</LinearLayout>

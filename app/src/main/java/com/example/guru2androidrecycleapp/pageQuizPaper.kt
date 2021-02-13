@@ -1,5 +1,6 @@
 package com.example.guru2androidrecycleapp
 
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -45,14 +46,17 @@ class pageQuizPaper : AppCompatActivity() {
         Quiz1PaperO.setOnClickListener {
             Quiz1PaperAns.visibility= View.VISIBLE
         }
+
         Quiz1PaperX.setOnClickListener {
             Quiz1PaperAns.visibility= View.VISIBLE
         }
+
         Quiz2PaperO.setOnClickListener {
             Quiz2PaperAns.visibility= View.VISIBLE
         }
+
         Quiz2PaperX.setOnClickListener {
-            Quiz2PaperAns.visibility= View.VISIBLE
+            Quiz2PaperAns.visibility = View.VISIBLE
         }
 
         //정답을 선택했을 경우 5point를 얻게 된다.

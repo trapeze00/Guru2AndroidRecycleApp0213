@@ -5,40 +5,42 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
 
-class PageTipPlastic : AppCompatActivity() {
-    lateinit var TipPlasticHome: ImageButton
-    lateinit var TipPlasticbookmark: ImageButton
-    lateinit var TipPlasticquiz: ImageButton
-    lateinit var TipPlasticmypage: ImageButton
+class PageTipCan : AppCompatActivity() {
+
+    lateinit var TipCanHome: ImageButton
+    lateinit var TipCanbookmark: ImageButton
+    lateinit var TipCanquiz: ImageButton
+    lateinit var TipCanmypage: ImageButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_page_tip_plastic)
+        setContentView(R.layout.activity_page_tip_can)
 
-        TipPlasticHome=findViewById(R.id.TipPlastichome)
-        TipPlasticbookmark=findViewById(R.id.TipPlasticbookmark)
-        TipPlasticquiz=findViewById(R.id.TipPlasticquiz)
-        TipPlasticmypage=findViewById(R.id.TipPlasticmypage)
+        TipCanHome=findViewById(R.id.TipCanhome)
+        TipCanbookmark=findViewById(R.id.TipCanbookmark)
+        TipCanquiz=findViewById(R.id.TipCanquiz)
+        TipCanmypage=findViewById(R.id.TipCanmypage)
 
         //버튼 클릭시 화면 전환 (메뉴)
-        TipPlasticHome.setOnClickListener {
+        TipCanHome.setOnClickListener {
             var intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
         }
 
-        TipPlasticbookmark.setOnClickListener {
+        TipCanbookmark.setOnClickListener {
             var intent = Intent(this, BookmarkActivity::class.java)
             startActivity(intent)
         }
 
-        TipPlasticquiz.setOnClickListener {
+        TipCanquiz.setOnClickListener {
             var intent = Intent(this, QuizActivity::class.java)
             startActivity(intent)
         }
 
-        TipPlasticmypage.setOnClickListener {
+        TipCanmypage.setOnClickListener {
             var intent = Intent(this, MyPage::class.java)
             startActivity(intent)
         }
+
     }
 }

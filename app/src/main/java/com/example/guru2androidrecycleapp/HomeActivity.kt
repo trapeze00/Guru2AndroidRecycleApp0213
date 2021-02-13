@@ -3,6 +3,7 @@ package com.example.guru2androidrecycleapp
 import android.content.Intent
 import android.widget.ImageButton
 import android.Manifest
+
 import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -34,6 +35,7 @@ class HomeActivity : AppCompatActivity() {
     lateinit var TipVinyl:ImageButton
     lateinit var TipStyrofoam:ImageButton
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
@@ -62,28 +64,28 @@ class HomeActivity : AppCompatActivity() {
         }
         
         //버튼 클릭 시 화면 전환 (분리수거 Tip)
-        //TipGlass.setOnClickListener {
-        //    var intent = Intent(this, PageTipGlass::class.java)
-        //    startActivity(intent)
-        //}
+        TipGlass.setOnClickListener {
+            var intent = Intent(this, PageTipGlass::class.java)
+            startActivity(intent)
+        }
         
         //버튼 클릭 시 화면 전환 (분리수거 Tip)
-        //TipCan.setOnClickListener {
-        //    var intent = Intent(this, PageTipCan::class.java)
-        //    startActivity(intent)
-        //}
+        TipCan.setOnClickListener {
+            var intent = Intent(this, PageTipCan::class.java)
+            startActivity(intent)
+        }
         
         //버튼 클릭 시 화면 전환 (분리수거 Tip)
-        //TipVinyl.setOnClickListener {
-        //    var intent = Intent(this, PageTipVinyl::class.java)
-        //    startActivity(intent)
-        //}
+        TipVinyl.setOnClickListener {
+            var intent = Intent(this, PageTipVinyl::class.java)
+            startActivity(intent)
+        }
         
         //버튼 클릭 시 화면 전환 (분리수거 Tip)
-        //TipStyrofoam.setOnClickListener {
-        //    var intent = Intent(this, PageTipStyrofoam::class.java)
-        //    startActivity(intent)
-        //}
+        TipStyrofoam.setOnClickListener {
+            var intent = Intent(this, PageTipStyrofoam::class.java)
+            startActivity(intent)
+        }
         
 
 
@@ -170,3 +172,4 @@ class HomeActivity : AppCompatActivity() {
     }
     //여기까지 배너 작동코드
 }
+

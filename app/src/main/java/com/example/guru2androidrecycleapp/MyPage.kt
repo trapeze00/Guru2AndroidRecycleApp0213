@@ -14,16 +14,15 @@ class MyPage : AppCompatActivity() {
 
     lateinit var home4: ImageButton
     lateinit var bookmark4: ImageButton
-    lateinit var quiz4:ImageButton
-    //마이 페이지 버튼은 비활성화
+    lateinit var quiz4: ImageButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_my_page)
 
-        home4=findViewById(R.id.home4)
-        bookmark4=findViewById(R.id.bookmark4)
-        quiz4=findViewById(R.id.quiz4)
+        home4 = findViewById(R.id.home4)
+        bookmark4 = findViewById(R.id.bookmark4)
+        quiz4 = findViewById(R.id.quiz4)
 
         home4.setOnClickListener {
             var intent = Intent(this, HomeActivity::class.java)
@@ -35,12 +34,10 @@ class MyPage : AppCompatActivity() {
             startActivity(intent)
         }
 
+
         quiz4.setOnClickListener {
             var intent = Intent(this, QuizActivity::class.java)
             startActivity(intent)
         }
-
-
-
     }
 }

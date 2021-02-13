@@ -5,40 +5,42 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
 
-class PageTipPlastic : AppCompatActivity() {
-    lateinit var TipPlasticHome: ImageButton
-    lateinit var TipPlasticbookmark: ImageButton
-    lateinit var TipPlasticquiz: ImageButton
-    lateinit var TipPlasticmypage: ImageButton
+class PageTipGlass : AppCompatActivity() {
+
+    lateinit var TipGlassHome: ImageButton
+    lateinit var TipGlassbookmark: ImageButton
+    lateinit var TipGlassquiz: ImageButton
+    lateinit var TipGlassmypage: ImageButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_page_tip_plastic)
+        setContentView(R.layout.activity_page_tip_glass)
 
-        TipPlasticHome=findViewById(R.id.TipPlastichome)
-        TipPlasticbookmark=findViewById(R.id.TipPlasticbookmark)
-        TipPlasticquiz=findViewById(R.id.TipPlasticquiz)
-        TipPlasticmypage=findViewById(R.id.TipPlasticmypage)
+        TipGlassHome=findViewById(R.id.TipGlasshome)
+        TipGlassbookmark=findViewById(R.id.TipGlassbookmark)
+        TipGlassquiz=findViewById(R.id.TipGlassquiz)
+        TipGlassmypage=findViewById(R.id.TipGlassmypage)
 
         //버튼 클릭시 화면 전환 (메뉴)
-        TipPlasticHome.setOnClickListener {
+        TipGlassHome.setOnClickListener {
             var intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
         }
 
-        TipPlasticbookmark.setOnClickListener {
+        TipGlassbookmark.setOnClickListener {
             var intent = Intent(this, BookmarkActivity::class.java)
             startActivity(intent)
         }
 
-        TipPlasticquiz.setOnClickListener {
+        TipGlassquiz.setOnClickListener {
             var intent = Intent(this, QuizActivity::class.java)
             startActivity(intent)
         }
 
-        TipPlasticmypage.setOnClickListener {
+        TipGlassmypage.setOnClickListener {
             var intent = Intent(this, MyPage::class.java)
             startActivity(intent)
         }
+
     }
 }

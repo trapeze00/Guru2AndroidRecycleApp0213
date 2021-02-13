@@ -5,38 +5,39 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
 
-class PageTipPlastic : AppCompatActivity() {
-    lateinit var TipPlasticHome: ImageButton
-    lateinit var TipPlasticbookmark: ImageButton
-    lateinit var TipPlasticquiz: ImageButton
-    lateinit var TipPlasticmypage: ImageButton
+class PageTipStyrofoam : AppCompatActivity() {
+
+    lateinit var TipStyrofoamHome: ImageButton
+    lateinit var TipStyrofoambookmark: ImageButton
+    lateinit var TipStyrofoamquiz: ImageButton
+    lateinit var TipStyrofoammypage: ImageButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_page_tip_plastic)
+        setContentView(R.layout.activity_page_tip_styrofoam)
 
-        TipPlasticHome=findViewById(R.id.TipPlastichome)
-        TipPlasticbookmark=findViewById(R.id.TipPlasticbookmark)
-        TipPlasticquiz=findViewById(R.id.TipPlasticquiz)
-        TipPlasticmypage=findViewById(R.id.TipPlasticmypage)
+        TipStyrofoamHome=findViewById(R.id.TipStyrofoamhome)
+        TipStyrofoambookmark=findViewById(R.id.TipStyrofoambookmark)
+        TipStyrofoamquiz=findViewById(R.id.TipStyrofoamquiz)
+        TipStyrofoammypage=findViewById(R.id.TipStyrofoammypage)
 
         //버튼 클릭시 화면 전환 (메뉴)
-        TipPlasticHome.setOnClickListener {
+        TipStyrofoamHome.setOnClickListener {
             var intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
         }
 
-        TipPlasticbookmark.setOnClickListener {
+        TipStyrofoambookmark.setOnClickListener {
             var intent = Intent(this, BookmarkActivity::class.java)
             startActivity(intent)
         }
 
-        TipPlasticquiz.setOnClickListener {
+        TipStyrofoamquiz.setOnClickListener {
             var intent = Intent(this, QuizActivity::class.java)
             startActivity(intent)
         }
 
-        TipPlasticmypage.setOnClickListener {
+        TipStyrofoammypage.setOnClickListener {
             var intent = Intent(this, MyPage::class.java)
             startActivity(intent)
         }
